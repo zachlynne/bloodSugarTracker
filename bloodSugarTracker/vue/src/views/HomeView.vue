@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>Home</h1>
-    <p>Welcome to blood Suagr Tracker</p>
+    <p>Welcome to Blood Sugar Tracker</p>
   </div>
 </template>
 
