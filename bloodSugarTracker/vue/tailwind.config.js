@@ -24,6 +24,10 @@ module.exports = {
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      backgroundImage: {
+        'login': "url('../src/assets/satellite-express-3612851_640.png')"
+
       }
     }
   },
