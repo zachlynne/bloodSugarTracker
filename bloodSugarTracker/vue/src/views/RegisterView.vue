@@ -1,27 +1,27 @@
 <template>
   <div id="register" class="text-center">
-    <form v-on:submit.prevent="register">
-      <h1>Create Account</h1>
-      <h1>This is a Test</h1>
-      <div role="alert" v-if="registrationErrors">
+    <form v-on:submit.prevent="register" class="max-w-sm mx-auto">
+      <h1 class="text-2xl font-bold mb-4">Create Account</h1>
+      <div role="alert" v-if="registrationErrors" class="text-red-500 mb-4">
         {{ registrationErrorMsg }}
       </div>
-      <div class="form-input-group">
-        <label for="username">Username</label>
-        <input type="text" id="username" v-model="user.username" required autofocus />
+      <div class="mb-4">
+        <label for="username" class="block mb-2">Username</label>
+        <input type="text" id="username" v-model="user.username" required autofocus class="w-full px-4 py-2 border rounded" />
       </div>
-      <div class="form-input-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" v-model="user.password" required />
+      <div class="mb-4">
+        <label for="password" class="block mb-2">Password</label>
+        <input type="password" id="password" v-model="user.password" required class="w-full px-4 py-2 border rounded" />
       </div>
-      <div class="form-input-group">
-        <label for="confirmPassword">Confirm Password</label>
-        <input type="password" id="confirmPassword" v-model="user.confirmPassword" required />
+      <div class="mb-4">
+        <label for="confirmPassword" class="block mb-2">Confirm Password</label>
+        <input type="password" id="confirmPassword" v-model="user.confirmPassword" required class="w-full px-4 py-2 border rounded" />
       </div>
-      <button type="submit">Create Account</button>
-      <p><router-link v-bind:to="{ name: 'login' }">Already have an account? Log in.</router-link></p>
+      <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Create Account</button>
+      <p class="mt-4"><router-link v-bind:to="{ name: 'login' }" class="text-blue-500">Already have an account? Log in.</router-link></p>
     </form>
   </div>
+
 </template>
 
 <script>
